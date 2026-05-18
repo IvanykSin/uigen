@@ -40,7 +40,7 @@ export function MainContent({ user, project }: MainContentProps) {
           <ResizablePanelGroup direction="horizontal" className="h-full">
             {/* Left Panel - Chat */}
             <ResizablePanel defaultSize={35} minSize={25} maxSize={50}>
-              <div className="h-full flex flex-col bg-green-100">
+              <div className="h-full flex flex-col bg-white">
                 {/* Chat Header */}
                 <div className="h-14 flex items-center px-6 border-b border-neutral-200/60">
                   <h1 className="text-lg font-semibold text-neutral-900 tracking-tight">React Component Generator</h1>
@@ -76,11 +76,6 @@ export function MainContent({ user, project }: MainContentProps) {
 
                 {/* Content Area */}
                 <div className="flex-1 overflow-hidden bg-neutral-50 relative">
-                  <img
-                    src="https://loremflickr.com/200/200/tulips"
-                    alt="Tulips"
-                    className="absolute top-3 right-3 w-24 h-24 rounded-full object-cover shadow-lg border-2 border-white z-10 pointer-events-none"
-                  />
                   {activeView === "preview" ? (
                     <div className="h-full bg-white">
                       <PreviewFrame />
